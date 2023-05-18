@@ -1,0 +1,43 @@
+/* Animation de droite à gauche avant de se recentré dans l'écran */
+@keyframes animLettre {
+    from {
+        opacity: 0;
+        transform: translate3d(4000px, 0, 0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+
+    75% {
+        transform: translate3d(20px, 0, 0);
+    }
+
+    90%{
+        transform: translate3d(-5px, 0, 0);
+    }
+    to{
+        transform: none;
+    }
+ }
+
+ @keyframes animFin {
+    0% {
+      transform: translateY(-100px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+
+/*animation du titre et de la fin*/
+#titre, #titre2 {
+    animation: animLettre 1s 1s backwards ease-in-out;
+}
+#fin{
+    animation: animFin 1s ease-in-out;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>TP2 RL</title>
+    <meta charset="UTF-8" />
+
+    <!-- Références aux CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styleBase.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+</head>
+
+<body>
+    <main id="intro">
+        <section>
+            <h1 id="titre">Conspiration Américaine!</h1>
+            <h2 id="titre2">Une fois que le quiz commence, il suffit de cliquer sur votre choix. Vous ne pouvez pas changer d'idée après avoir cliquer.</h2>
+        </section>
+        <footer>
+            <button>Cliquer ici pour commencer le quiz</button>
+        </footer>
+    </main>
+
+    <main id="quiz">
+        <header>
+            Conspiration ou réalité?
+        </header>
+
+        <section id="section">
+            <!-- Affichage de la question -->
+            <div id="titreQuestion">Titre de la question</div>
+            <!-- Affichage des choix -->
+            <div id="lesChoix"></div>
+        </section>
+        <section class="validation">
+        </section>
+    </main>
+
+    <section id="fin">
+        <!-- Affichage des résultats et du bouton pour recommencer -->
+    </section>
+
+    <footer>
+        <!-- Zone de message -->
+    </footer>
+
+    <!-- Chargement des scripts -->
+    <script src="js/questionsQuiz.js"></script>
+    <script src="js/fonctions.js"></script>
+</body>
+
+</html>

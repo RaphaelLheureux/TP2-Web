@@ -1,0 +1,196 @@
+/* normalization ajouter
+============================================================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en page
+============================================================*/
+body {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+
+    font-size: 0.875rem;
+    
+    font-family: 'Audiowide',cursive;
+    color: black;
+    overflow-x: hidden;
+}
+
+header {
+    margin-bottom: 5vh;
+}
+
+main,
+header,
+footer,
+section {
+    width: 100%;
+}
+
+body{
+    background-image: url(../images/drapeau_vertical.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    min-height: 10vh;
+    width: 100vw;
+    text-align: center bottom;
+
+    position: fixed;
+    margin-top: 80vh;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+button {
+    background-color: #2b18cf;
+    font-size: 1.5rem;
+    color: white;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #2112a1;
+    transform: scale(1.05);
+}
+
+#titre {
+    font-size: 8rem;
+    
+}
+
+#titre2 {
+    font-size: 2rem;
+    margin-bottom: 20vh;
+}
+#titreQuestion{
+    background-color: #2b18cf;
+}
+
+
+/* Affichage des choix du quiz */
+#quiz,
+#fin {
+    width: 100vw;
+    height: 100vh;
+    font-size: 1.5rem;
+    display: none;
+
+}
+.choix {
+    background-color: black;
+    border: 3px solid rgb(0, 0, 0);
+    color: white;
+    margin-bottom: 11vh;
+    width: 60vw;
+    margin-left: 20vw;
+
+}
+
+.choix:first-of-type {
+    margin-top: 10vh;
+}
+
+.choix:hover {
+    border:black;
+}
+.validation{
+    background-color: #2b18cf;
+    color: white;
+    width: 50vw;
+    margin-left: 25vw;
+}
+
+/* Confirmation visuel d'une bonne ou mauvaise réponse */
+.bonChoix {
+    background-color: green;
+}
+
+.bonChoix:hover {
+    background-color: #005a00;
+}
+
+.mauvaisChoix {
+    background-color: red;
+}
+
+.mauvaisChoix:hover {
+    background-color: #bf0505;
+}
+
+/*pour un ecran minimum de 768px*/
+@media screen and (min-width: 768px) {
+
+    body{
+        background-image: url(../images/drapeau_horizontal.png);
+    }
+
+    .choix {
+        margin-bottom: 8vh;
+        width: 40vw;
+        height: 8vh;
+        margin-left: 30vw;
+
+    }
+
+    .choix:first-of-type {
+        margin-top: 10vh;
+
+    }
+}
+
+
+
+/*pour un ecran minimum de 992px*/
+@media screen and (min-width: 992px) {
+
+    body{
+        background-image: url(../images/drapeau_horizontal.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #titre {
+        font-size: 10rem;
+    }
+
+    #titre2 {
+        font-size: 3rem;
+    }
+
+    #quiz,
+    #fin {
+        width: 100vw;
+        height: 50vh;
+
+        font-size: 2rem;
+        margin-top: 0vh;
+    }
+
+    button {
+        font-size: 2rem;
+    }
+}
+
